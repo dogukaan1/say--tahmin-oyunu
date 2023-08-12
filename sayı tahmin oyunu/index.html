@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sayı tahmin oyunu</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h1  class="baslık">SAYI TAHMİN OYUNU</h1>
+    <center>
+    <div class="anaDiv"> 
+        <br>
+        bilgisayar 1-10 arası bir sayı tuttu onu tahmin edin
+        <br>
+        <br><br>
+        <span>tahmin : <input type="text" id="tahmin"></span>
+        <br>
+        <input type="button" id="cevap" value="gönder">
+        <br>
+        <p style="font-size: 25px;color:black">sonuc:</p>
+        <br>
+        <div style="text-align: center;color: aliceblue;" id="sonuc"></div>
+    </div>
+    <script type="text/javascript" language="javascript">
+        var sayı=Math.floor(Math.random() * 10);
+        var tm=document.getElementById("tahmin")
+        var cvp=document.getElementById("cevap")
+        var snc=document.getElementById("sonuc")
+       
+        cvp.onclick= function()
+        {
+        for(let i=0;i<11;i++){
+            
+            if(tahmin.value>sayı){
+                snc.innerHTML="daha küçük bir sayı girin"}
+            else if(tahmin.value<sayı){
+                snc.innerHTML="daha büyük bir sayı girin"}
+            else if(tahmin.value==sayı){
+                snc.innerHTML="doğru cevap tebrikler";
+                break;
+
+            }
+
+        }
+    }
+        
+        </script>
+
+
+
+</body>
+</html>

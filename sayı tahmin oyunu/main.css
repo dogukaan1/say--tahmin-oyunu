@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: aliceblue;
+}
+.baslık{
+    color: purple;
+    text-align: center;
+}
+.anaDiv{
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    color: black;
+    border: 2px solid;
+    border-color: orange;
+    font-size: 29px;
+}
